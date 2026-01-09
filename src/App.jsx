@@ -67,47 +67,49 @@ function MailSvg() {
 
 function IdCard() {
   return (
-    <div className='w-[344px] h-[640px] bg-white relative rounded-2xl overflow-hidden'>
-      <div className='w-full max-w-[344px] h-full bg-transparent relative overflow-visible'>
-        <div className='w-full h-full bg-transparent'>
-          <div className='w-full h-full bg-transparent flex flex-col py-[30px] px-[20px] gap-[24px] items-center justify-center'>
-            <div className='flex-1'>
-              <div className='w-[240px] h-[284px] rounded-2xl bg-orange-500 overflow-hidden'>
-                <img
-                  src="https://github.com/YashGovindani/protfolio/blob/1a5d313f9d77d1cf20f986946ac2d2d9f07c9195/IMG_2012.jpeg?raw=true"
-                  className="w-full"
-                />
-              </div>
-            </div>
-            <div className='flex-1 flex flex-col justify-between items-center'>
-              <div className='text-black text-[36px] font-bold'>Yash Govindani</div>
-              <div className='flex flex-col gap-[20px]'>
-                <div className='text-[18px] font-medium text-[rgb(106,107,110)] text-center leading-[18px] max-w-[300px]'>
-                  A Software Engineer who has developed countless innovative solutions.
+    <div className='w-full lg:w-[344px] h-fit md:h-[540px] lg:h-[640px] bg-white relative rounded-2xl overflow-hidden'>
+      <div className='w-full h-full flex items-center justify-center'>
+        <div className='w-full max-w-[344px] h-full bg-transparent relative overflow-visible'>
+          <div className='w-full h-full bg-transparent'>
+            <div className='w-full h-full bg-transparent flex flex-col py-[30px] px-[20px] gap-[24px] items-center justify-center'>
+              <div className='flex-1'>
+                <div className='w-full max-w-[260px] md:w-[240px] h-[210px] md:h-[284px] rounded-2xl bg-orange-500 overflow-hidden'>
+                  <img
+                    src="https://github.com/YashGovindani/protfolio/blob/1a5d313f9d77d1cf20f986946ac2d2d9f07c9195/IMG_2012.jpeg?raw=true"
+                    className="w-full"
+                  />
                 </div>
-                <div className='flex h-[36px] gap-[16px] justify-center items-center'>
-                  <a href='https://www.linkedin.com/in/yash-govindani/' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                    <LinkedInSvg />
-                  </a>
-                  <a href='https://github.com/YashGovindani' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                    <GithubSvg />
-                  </a>
-                  <a href='mailto:yashgovindani222@gmail.com' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                    <MailSvg />
-                  </a>
-                  <a href='call:+918878855255' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                    <PhoneSvg />
-                  </a>
+              </div>
+              <div className='flex-1 flex flex-col justify-between items-center'>
+                <div className='text-black text-[36px] font-bold'>Yash Govindani</div>
+                <div className='flex flex-col gap-[20px]'>
+                  <div className='text-[18px] font-medium text-[rgb(106,107,110)] text-center leading-[18px] max-w-[300px]'>
+                    A Software Engineer who has developed countless innovative solutions.
+                  </div>
+                  <div className='flex h-[36px] gap-[16px] justify-center items-center'>
+                    <a href='https://www.linkedin.com/in/yash-govindani/' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                      <LinkedInSvg />
+                    </a>
+                    <a href='https://github.com/YashGovindani' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                      <GithubSvg />
+                    </a>
+                    <a href='mailto:yashgovindani222@gmail.com' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                      <MailSvg />
+                    </a>
+                    <a href='call:+918878855255' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                      <PhoneSvg />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className='absolute top-0'>
-          <div class="w-[160px] h-[80px] border-4 border-t-transparent border-[rgb(255,122,0)] border-dashed rounded-b-full"></div>
+          <div className='absolute -top-4'>
+            <div class="w-[160px] h-[80px] border-4 border-t-transparent border-[rgb(255,122,0)] border-dashed rounded-b-full"></div>
+          </div>
         </div>
       </div>
-      <div className='absolute bottom-[170px] -translate-x-2/3 w-fit h-fit rotate-30'>
+      <div className='absolute bottom-[220px] md:bottom-[170px] -translate-x-2/3 w-fit h-fit rotate-30'>
         <div className='w-full h-full relative'>
           <div class="w-[232px] h-[101px] border-4 border-t-transparent border-[rgb(255,122,0)] border-dashed rounded-b-full"></div>
           <div className='w-[34px] h-[34px] absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 -rotate-30 flex items-center justify-center rounded-full bg-[rgb(255,122,0)]'>
@@ -123,7 +125,7 @@ function App() {
   return (
     <div className='w-full min-w-[100vw] h-full min-h-[100vh] bg-[rgb(21,19,18)] flex items-center justify-center poppins'>
       {/* center container */}
-      <div className='w-fit h-fit max-w-[1140px] px-[40px] bg-transparent flex gap-[50px]'>
+      <div className='w-full lg:w-fit h-fit max-w-[1140px] px-[30px] lg:px-[40px] bg-transparent flex gap-[50px] bg-red-300'>
         <IdCard />
       </div>
     </div>
