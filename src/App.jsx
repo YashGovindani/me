@@ -110,7 +110,7 @@ function IdCard() {
           </div>
         </div>
       </div>
-      <div className='absolute bottom-[220px] md:bottom-[170px] -translate-x-2/3 w-fit h-fit rotate-30'>
+      <div className='absolute top-[160px] md:top-[270px] lg:top-[370px] -translate-x-2/3 w-fit h-fit rotate-30'>
         <div className='w-full h-full relative'>
           <div class="w-[232px] h-[101px] border-4 border-t-transparent border-[rgb(244,108,56)] border-dashed rounded-b-full"></div>
           <div className='w-[34px] h-[34px] absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 -rotate-30 flex items-center justify-center rounded-full bg-[rgb(244,108,56)]'>

@@ -5,7 +5,7 @@ function Contact() {
                 <div className="text-white">LET'S WORK</div>
                 <div className="text-[rgba(182,180,189,0.2)]">TOGETHER</div>
             </div>
-            <div className="flex flex-col w-full h-fit gap-[20px] text-[rgb(136,136,136)]">
+            <form className="flex flex-col w-full h-fit gap-[20px] text-[rgb(136,136,136)]">
                 <div className="flex w-full gap-[20px]">
                     <div className="w-full flex-1 flex flex-col gap-[10px] text-[12px]">
                         <div className="">Name</div>
@@ -48,10 +48,10 @@ function Contact() {
                         />
                     </div>
                 </div>
-                <div className="w-full h-[40px] bg-[rgb(244,108,56)] rounded-[8px] text-white flex items-center justify-center text-[14px] font-semibold">
+                <button className="w-full h-[40px] bg-[rgb(244,108,56)] rounded-[8px] text-white flex items-center justify-center text-[14px] font-semibold">
                     Submit
-                </div>
-            </div>
+                </button>
+            </form>
         </div>
     )
 }
