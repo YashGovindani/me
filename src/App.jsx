@@ -1,5 +1,6 @@
 import './App.css'
 import Contact from './Contact'
+import { Toaster } from "react-hot-toast"
 
 function FlameSvg() {
   return (
@@ -20,11 +21,11 @@ function LinkedInSvg() {
 
 function GithubSvg() {
   return (
-    <svg className='w-full h-full fill-[#f46c38]' viewBox="0 0 20 20" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg className='w-full h-full fill-[#f46c38]' viewBox="0 0 20 20" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
       <desc>Created with Sketch.</desc>
       <defs>
       </defs>
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#f46c38">
               <g id="icons" transform="translate(56.000000, 160.000000)">
                   <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
@@ -38,8 +39,8 @@ function GithubSvg() {
 
 function PhoneSvg() {
   return (
-    <svg className='w-full h-full fill-[#f46c38]' version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  fill="currentColor"
-      viewBox="0 0 512 512"  xml:space="preserve">
+    <svg className='w-full h-full fill-[#f46c38]' version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  fill="currentColor"
+      viewBox="0 0 512 512"  xmlSpace="preserve">
     <g>
       <path d="M500.177,55.798c0,0-21.735-7.434-39.551-11.967C411.686,31.369,308.824,24.727,256,24.727
         S100.314,31.369,51.374,43.831c-17.816,4.534-39.551,11.967-39.551,11.967c-7.542,2.28-12.444,9.524-11.76,17.374l8.507,97.835
@@ -61,7 +62,14 @@ function PhoneSvg() {
 
 function MailSvg() {
   return (
-    <svg className='w-full h-full fill-[#f46c38]' viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path stroke="#f46c38" stroke-linejoin="round" stroke-width="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"/>
+    <svg className='w-full h-full fill-[#f46c38]' viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path stroke="#f46c38" strokeLinejoin="round" strokeWidth="12" d="M22 57.265V142c0 5.523 4.477 10 10 10h24V95.056l40 30.278 40-30.278V152h24c5.523 0 10-4.477 10-10V57.265c0-13.233-15.15-20.746-25.684-12.736L96 81.265 47.684 44.53C37.15 36.519 22 44.032 22 57.265Z"/>
+    </svg>
+  )
+}
+
+function LeetcodeSvg() {
+  return (
+    <svg className='w-full h-full fill-[#f46c38]' viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
     </svg>
   )
 }
@@ -87,32 +95,40 @@ function IdCard() {
                   <div className='text-[18px] font-medium text-[rgb(106,107,110)] text-center leading-[18px] max-w-[300px]'>
                     A Software Engineer who has developed countless innovative solutions.
                   </div>
-                  <div className='flex h-[36px] gap-[16px] justify-center items-center'>
-                    <a href='https://www.linkedin.com/in/yash-govindani/' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                      <LinkedInSvg />
-                    </a>
-                    <a href='https://github.com/YashGovindani' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                      <GithubSvg />
-                    </a>
-                    <a href='mailto:yashgovindani222@gmail.com' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                      <MailSvg />
-                    </a>
-                    <a href='call:+918878855255' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
-                      <PhoneSvg />
-                    </a>
-                  </div>
+                  {/* <div className='flex flex-col gap-0 items-center h-fit'> */}
+                    <div className='flex h-[36px] gap-[16px] justify-center items-center'>
+                      <a href='https://www.linkedin.com/in/yash-govindani/' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                        <LinkedInSvg />
+                      </a>
+                      <a href='https://leetcode.com/u/vaathi/' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                        <LeetcodeSvg />
+                      </a>
+                      <a href='https://github.com/YashGovindani' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                        <GithubSvg />
+                      </a>
+                      <a href='mailto:yashgovindani222@gmail.com' className='h-full w-fit p-1 hover:bg-black/10 rounded-sm hover:cursor-pointer'>
+                        <MailSvg />
+                      </a>
+                    </div>
+                    {/* <div className='h-[14px] w-full gap-[8px] translate-y-4 font-medium flex justify-center items-center'>
+                      <div className='w-fit h-full'>
+                        <PhoneSvg />
+                      </div>
+                      <div className='w-fit h-fit text-[14px] text-[rgb(106,107,110)] text-nowrap'>+91-88788-55255</div>
+                    </div> */}
+                  {/* </div> */}
                 </div>
               </div>
             </div>
           </div>
           <div className='absolute -top-4'>
-            <div class="w-[160px] h-[80px] border-4 border-t-transparent border-[rgb(244,108,56)] border-dashed rounded-b-full"></div>
+            <div className="w-[160px] h-[80px] border-4 border-t-transparent border-[rgb(244,108,56)] border-dashed rounded-b-full"></div>
           </div>
         </div>
       </div>
       <div className='absolute top-[160px] md:top-[270px] lg:top-[370px] -translate-x-2/3 w-fit h-fit rotate-30'>
         <div className='w-full h-full relative'>
-          <div class="w-[232px] h-[101px] border-4 border-t-transparent border-[rgb(244,108,56)] border-dashed rounded-b-full"></div>
+          <div className="w-[232px] h-[101px] border-4 border-t-transparent border-[rgb(244,108,56)] border-dashed rounded-b-full"></div>
           <div className='w-[34px] h-[34px] absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 -rotate-30 flex items-center justify-center rounded-full bg-[rgb(244,108,56)]'>
             <FlameSvg />
           </div>
@@ -124,15 +140,18 @@ function IdCard() {
 
 function App() {
   return (
-    <div className='w-full min-w-[100vw] h-full min-h-[100vh] bg-[rgb(21,19,18)] flex items-center justify-center poppins no-scrollbar'>
-      {/* center container */}
-      <div className='w-full h-fit max-w-[1140px] p-[30px] lg:p-[40px] bg-transparent flex flex-col lg:flex-row gap-[50px] bg-red-300'>
-        <IdCard />
-        <div className='w-full h-fit flex flex-col gap-[120px]'>
-          <Contact />
+    <>
+      <Toaster position="top-middle" />
+      <div className='w-full min-w-[100vw] h-full min-h-[100vh] bg-[rgb(21,19,18)] flex items-center justify-center poppins no-scrollbar'>
+        {/* center container */}
+        <div className='w-full h-fit max-w-[1140px] p-[30px] lg:p-[40px] bg-transparent flex flex-col lg:flex-row gap-[50px] bg-red-300'>
+          <IdCard />
+          <div className='w-full h-fit flex flex-col gap-[120px]'>
+            <Contact />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
