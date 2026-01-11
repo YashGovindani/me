@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 function FlameSvg() {
   return (
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" fill="none" overflow="visible">
@@ -48,17 +50,32 @@ function LeetcodeSvg() {
 }
 
 function IdCard() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <div className='lg:sticky lg:top-[30px] w-full lg:w-[344px] h-fit md:h-[540px] lg:h-[640px] lg:flex-none bg-white relative rounded-2xl overflow-hidden'>
       <div className='w-full h-full flex items-center justify-center'>
         <div className='w-full max-w-[344px] h-full bg-transparent relative overflow-visible'>
           <div className='w-full h-full bg-transparent'>
             <div className='w-full h-full bg-transparent flex flex-col py-[30px] px-[20px] gap-[24px] items-center justify-center'>
-              <div className='flex-1'>
-                <div className='w-full max-w-[260px] md:w-[240px] h-[210px] md:h-[284px] rounded-2xl bg-[#f46c38] overflow-hidden'>
+              <div className='flex-1 w-full md:w-fit'>
+                <div className='w-full min-w-full max-w-[260px] md:w-[240px] h-[210px] md:h-[284px] rounded-2xl bg-[#f46c38] overflow-hidden'>
+                  {!imageLoaded && (
+                    <div className='w-full h-full flex items-center justify-center bg-[#f46c38]'>
+                      <div className='w-8 h-8 border-2 border-white/30 border-t-white rounded-full animate-spin'></div>
+                    </div>
+                  )}
                   <img
                     src="https://github.com/YashGovindani/protfolio/blob/1a5d313f9d77d1cf20f986946ac2d2d9f07c9195/IMG_2012.jpeg?raw=true"
-                    className="w-full"
+                    alt="Yash Govindani"
+                    className={`w-full transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    onLoad={() => setImageLoaded(true)}
+                    onError={(e) => {
+                      if (!e.target.dataset.retried) {
+                        e.target.dataset.retried = "true";
+                        e.target.src = e.target.src + "&t=" + Date.now();
+                      }
+                    }}
                   />
                 </div>
               </div>
