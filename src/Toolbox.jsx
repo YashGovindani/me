@@ -70,15 +70,15 @@ function PostgreSvg() {
 
 function MajorSkill({ children, title, description, url }) {
   return (
-    <a href={url} className="flex w-full h-fit p-[16px] gap-[16px] bg-transparent rounded-[8px] hover:cursor-pointer hover:bg-white/3">
+    <a href={url} className="flex flex-col sm:flex-row items-center sm:items-left w-full h-fit p-[16px] gap-[16px] bg-transparent rounded-[8px] hover:cursor-pointer hover:bg-white/3">
       <div className="flex-none w-[60px] h-[60px] p-[10px] flex items-center justify-center bg-white rounded-[8px]">
         {children}
       </div>
       <div className="h-fit flex-1 flex flex-col gap-[4px]">
-        <div className="text-white text-[24px] leading-[120%]">
+        <div className="text-white text-[16px] sm:text-[24px] leading-[120%]">
           {title}
         </div>
-        <div className="text-[rgb(153,143,143)] text-[16px] leading-[140%]">
+        <div className="hidden sm:block text-[rgb(153,143,143)] text-[16px] leading-[140%]">
           {description}
         </div>
       </div>
@@ -93,7 +93,7 @@ function Toolbox() {
         <div className="text-white">DEVELOPER</div>
         <div className="text-[rgba(182,180,189,0.2)]">TOOLBOX</div>
       </div>
-      <div className="w-full h-fit grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-[10px]">
+      <div className="w-full h-fit grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-[10px]">
         <MajorSkill title="React" description={"Frontend Library"} url={"https://react.dev/"}>
           <ReactSvg />
         </MajorSkill>
