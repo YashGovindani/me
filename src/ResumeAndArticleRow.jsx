@@ -72,7 +72,7 @@ function ResumeAndArticleRow() {
                             <StackSvg />
                         </div>
                         <div className="w-full h-full flex-1 flex flex-col justify-between">
-                            <div className="text-white text-[24px] leading-[24px] h-fit w-full font-medium">Resume For<br/>Reference</div>
+                            <div className="text-white text-[24px] leading-[24px] h-fit w-full font-medium pt-2">Personal Project<br/>Showcase</div>
                             <div className="flex justify-end h-[32px] w-full">
                                 <div className="w-[32px] h-[32px] border border-white rounded-[6px] p-[6px] text-white hover:text-[#F46C38] bg-transparent hover:bg-white hover:cursor-pointer">
                                     <ArrowSvg />
