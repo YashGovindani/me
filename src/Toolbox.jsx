@@ -93,7 +93,7 @@ function Toolbox() {
         <div className="text-white">DEVELOPER</div>
         <div className="text-[rgba(182,180,189,0.2)]">TOOLBOX</div>
       </div>
-      <div className="w-full h-fit grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-[10px]">
+      <div className="w-full h-fit grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 gap-[10px]">
         <MajorSkill title="React" description={"Frontend Library"} url={"https://react.dev/"}>
           <ReactSvg />
         </MajorSkill>
