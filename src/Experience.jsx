@@ -1,18 +1,24 @@
 const experienceData = [
   {
-    designation: "Product Engineer",
+    designation: "Software Engineer",
+    description: "Working on AI Systems, to accelerate content creation.",
+    dateRangeString: "March, 2026 - Present",
+    company: "Dashverse"
+  },
+  {
+    designation: "Software Engineer 2",
     description: "Led the team as Fullstack Developer, working closely with Management and CXO's to build the ERPnext and Finance Account Receivables Product right from scratch.",
-    dateRangeString: "Jan, 2024 - Present",
+    dateRangeString: "Jan, 2024 - Feb, 2026",
     company: "Juspay"
   },
   {
-    designation: "Associate Engineer",
+    designation: "Software Engineer",
     description: "Got chance to work on various projects during this period including HyperCredit, Namma Yatri, Payment Page and in-house frontend framework - Presto.",
     dateRangeString: "July, 2022 - Dec, 2023",
     company: "Juspay"
   },
   {
-    designation: "Engineering Intern",
+    designation: "SDE Intern",
     description: "Started with development on frontend in HyperCredit when the product was in inital stage.",
     dateRangeString: "July, 2022 - Dec, 2023",
     company: "Juspay"
@@ -54,7 +60,7 @@ export default function Experience() {
   return (
     <div className="w-full h-fit flex flex-col gap-[20px]">
       <div className="w-full h-fit flex flex-col text-[50px] md:text-[90px] font-bold leading-[50px] md:leading-[90px] gap-0 text-center lg:text-left">
-        <div className="text-white">3+ YEARS OF</div>
+        <div className="text-white">4+ YEARS OF</div>
         <div className="text-[rgba(182,180,189,0.2)]">EXPERIENCE</div>
       </div>
       <div className="w-full h-fit flex flex-col gap-0">
