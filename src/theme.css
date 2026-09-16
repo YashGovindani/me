@@ -13,34 +13,37 @@
  *
  *  Only the tech-logo SVGs in Toolbox.jsx keep their own brand colours
  *  (React blue, JS yellow, …) — those are not part of the theme on purpose.
+ *
+ *  Current palette: inspired by zen-browser.app (dark) — charcoal paper,
+ *  warm cream text, coral accent, cream buttons with dark text.
  * ─────────────────────────────────────────────────────────────────────────
  */
 @theme {
   /* ── Page ────────────────────────────────────────────────────────────── */
-  --color-background:         rgb(21 19 18);           /* page background            */
-  --color-foreground:         #ffffff;                 /* headings & primary text    */
-  --color-muted-foreground:   #998f8f;                 /* descriptions, body copy    */
-  --color-subtle-foreground:  rgb(136 136 136);        /* form labels                */
-  --color-faded-foreground:   rgb(182 180 189 / 0.2);  /* faded 2nd word in headings */
-  --color-hover:              rgb(255 255 255 / 0.03); /* hover bg on list rows      */
+  --color-background:         #1f1f1f;                 /* page background  (zen paper) */
+  --color-foreground:         #d1cfc0;                 /* headings & primary text (zen cream) */
+  --color-muted-foreground:   rgb(209 207 192 / 0.7);  /* descriptions, body copy    */
+  --color-subtle-foreground:  rgb(209 207 192 / 0.5);  /* form labels                */
+  --color-faded-foreground:   rgb(209 207 192 / 0.18); /* faded 2nd word in headings */
+  --color-hover:              rgb(255 255 255 / 0.05); /* hover bg on list rows (zen muted) */
 
-  /* ── Primary accent (orange) ─────────────────────────────────────────── */
-  --color-primary:            #f46c38;                 /* buttons, icons, photo card */
-  --color-primary-hover:      rgb(222 98 49);          /* button hover               */
-  --color-primary-foreground: #ffffff;                 /* text / icons on primary    */
-  --color-primary-decoration: rgb(202 89 46 / 0.4);    /* wavy lines on primary card */
+  /* ── Primary accent (coral) ──────────────────────────────────────────── */
+  --color-primary:            #f76f53;                 /* buttons, icons, photo card (zen coral) */
+  --color-primary-hover:      #e3401f;                 /* button hover (deeper coral) */
+  --color-primary-foreground: #1f1f1f;                 /* text / icons on coral      */
+  --color-primary-decoration: rgb(208 41 8 / 0.35);    /* wavy lines on coral card   */
 
-  /* ── Secondary accent (lime) ─────────────────────────────────────────── */
-  --color-secondary:            #c5ff41;               /* blogs card                 */
-  --color-secondary-foreground: #000000;               /* text / icons on secondary  */
-  --color-secondary-decoration: rgb(108 227 182 / 0.5);/* wavy lines on lime card    */
+  /* ── Secondary accent (cream) ────────────────────────────────────────── */
+  --color-secondary:            #d1cfc0;               /* blogs card (zen cream button) */
+  --color-secondary-foreground: #1f1f1f;               /* text / icons on cream      */
+  --color-secondary-decoration: rgb(31 31 31 / 0.15);  /* wavy lines on cream card   */
 
   /* ── Light card (ID card, toolbox icon tiles) ────────────────────────── */
-  --color-card:                  #ffffff;
-  --color-card-foreground:       #000000;              /* name on the ID card        */
-  --color-card-muted-foreground: rgb(106 107 110);     /* tagline on the ID card     */
-  --color-card-hover:            rgb(0 0 0 / 0.1);     /* hover on social icon links */
+  --color-card:                  #f2f0e3;              /* zen light paper            */
+  --color-card-foreground:       #2e2e2e;              /* name on the ID card        */
+  --color-card-muted-foreground: rgb(46 46 46 / 0.65); /* tagline on the ID card     */
+  --color-card-hover:            rgb(46 46 46 / 0.1);  /* hover on social icon links */
 
   /* ── Form ────────────────────────────────────────────────────────────── */
-  --color-input:              rgb(182 180 189 / 0.2);  /* input / textarea bg        */
+  --color-input:              rgb(255 255 255 / 0.1);  /* input / textarea bg (zen subtle) */
 }
