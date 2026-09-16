@@ -1,4 +1,3 @@
-import './App.css'
 import Contact from './Contact'
 import { Toaster } from "react-hot-toast"
 import IdCard from './IdCard'
@@ -10,9 +9,9 @@ function App() {
   return (
     <>
       <Toaster position="top-middle" />
-      <div className='w-full min-w-[100vw] h-full min-h-[100vh] bg-[rgb(21,19,18)] flex items-center justify-center poppins no-scrollbar select-none'>
+      <div className='w-full min-w-[100vw] h-full min-h-[100vh] bg-background flex items-center justify-center poppins no-scrollbar select-none'>
         {/* center container */}
-        <div className='w-full h-fit items-center lg:items-start max-w-[756px] lg:max-w-[1140px] p-[30px] lg:p-[40px] bg-transparent flex flex-col lg:flex-row gap-[100px] lg:gap-[50px] bg-red-300'>
+        <div className='w-full h-fit items-center lg:items-start max-w-[756px] lg:max-w-[1140px] p-[30px] lg:p-[40px] bg-transparent flex flex-col lg:flex-row gap-[100px] lg:gap-[50px]'>
           <IdCard />
           <div className='w-full h-fit flex flex-col gap-[100px] lg:gap-[120px]'>
             <Intro />

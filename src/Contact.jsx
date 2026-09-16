@@ -87,10 +87,10 @@ function Contact() {
     return (
         <div className="w-full h-fit flex flex-col bg-transparent gap-[50px]">
             <div className="w-full h-fit flex flex-col text-[50px] md:text-[90px] font-bold leading-[50px] md:leading-[90px] gap-0 text-center lg:text-left">
-                <div className="text-white">LET'S WORK</div>
-                <div className="text-[rgba(182,180,189,0.2)]">TOGETHER</div>
+                <div className="text-foreground">LET'S WORK</div>
+                <div className="text-faded-foreground">TOGETHER</div>
             </div>
-            <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col w-full h-fit gap-[20px] text-[rgb(136,136,136)]">
+            <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col w-full h-fit gap-[20px] text-subtle-foreground">
                 <div className="flex w-full gap-[20px]">
                     <div className="w-full flex-1 flex flex-col gap-[10px] text-[12px]">
                         <div className="">Name</div>
@@ -103,7 +103,7 @@ function Contact() {
                             value={form.name}
                             onChange={handleChange}
                             disabled={buttonText !== "Submit"}
-                            className="w-full h-[40px] text-[14px] rounded-[8px] bg-[rgba(182,180,189,0.2)] p-[12px] text-white outline-none focus:ring focus:ring-[rgb(244,108,56)] disabled:cursor-not-allowed"
+                            className="w-full h-[40px] text-[14px] rounded-[8px] bg-input p-[12px] text-foreground outline-none focus:ring focus:ring-primary disabled:cursor-not-allowed"
                         />
                     </div>
                     <div className="w-full flex-1 flex flex-col gap-[10px] text-[12px]">
@@ -117,7 +117,7 @@ function Contact() {
                             value={form.email}
                             onChange={handleChange}
                             disabled={buttonText !== "Submit"}
-                            className="w-full h-[40px] text-[14px] rounded-[8px] bg-[rgba(182,180,189,0.2)] p-[12px] text-white outline-none focus:ring focus:ring-[rgb(244,108,56)] disabled:cursor-not-allowed"
+                            className="w-full h-[40px] text-[14px] rounded-[8px] bg-input p-[12px] text-foreground outline-none focus:ring focus:ring-primary disabled:cursor-not-allowed"
                         />
                     </div>
                 </div>
@@ -133,7 +133,7 @@ function Contact() {
                             value={form.subject}
                             onChange={handleChange}
                             disabled={buttonText !== "Submit"}
-                            className="w-full h-[40px] text-[14px] rounded-[8px] bg-[rgba(182,180,189,0.2)] p-[12px] text-white outline-none focus:ring focus:ring-[rgb(244,108,56)] disabled:cursor-not-allowed"
+                            className="w-full h-[40px] text-[14px] rounded-[8px] bg-input p-[12px] text-foreground outline-none focus:ring focus:ring-primary disabled:cursor-not-allowed"
                         />
                     </div>
                 </div>
@@ -149,11 +149,11 @@ function Contact() {
                             value={form.message}
                             onChange={handleChange}
                             disabled={buttonText !== "Submit"}
-                            className="w-full min-h-[145px] text-[14px] rounded-[8px] bg-[rgba(182,180,189,0.2)] p-[12px] text-white outline-none focus:ring focus:ring-[rgb(244,108,56)] resize-none no-scrollbar disabled:cursor-not-allowed"
+                            className="w-full min-h-[145px] text-[14px] rounded-[8px] bg-input p-[12px] text-foreground outline-none focus:ring focus:ring-primary resize-none no-scrollbar disabled:cursor-not-allowed"
                         />
                     </div>
                 </div>
-                <button disabled={buttonText !== "Submit"} type="submit" className="w-full h-[40px] bg-[rgb(244,108,56)] rounded-[8px] text-white flex items-center justify-center text-[14px] font-semibold hover:bg-[rgb(222,98,49)] hover:cursor-pointer disabled:cursor-not-allowed">
+                <button disabled={buttonText !== "Submit"} type="submit" className="w-full h-[40px] bg-primary rounded-[8px] text-primary-foreground flex items-center justify-center text-[14px] font-semibold hover:bg-primary-hover hover:cursor-pointer disabled:cursor-not-allowed">
                     {buttonText}
                 </button>
             </form>

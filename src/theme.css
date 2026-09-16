@@ -1,0 +1,46 @@
+/*
+ * ─────────────────────────────────────────────────────────────────────────
+ *  THEME — single source of truth for every colour used on the site.
+ *
+ *  Change a value here and it updates everywhere.  Each token becomes a
+ *  Tailwind utility automatically, e.g.
+ *
+ *      --color-primary   →  bg-primary  text-primary  border-primary
+ *                           fill-primary  stroke-primary  ring-primary
+ *                           bg-primary/50  (opacity modifiers work too)
+ *
+ *  and is also exposed as a plain CSS variable:  var(--color-primary)
+ *
+ *  Only the tech-logo SVGs in Toolbox.jsx keep their own brand colours
+ *  (React blue, JS yellow, …) — those are not part of the theme on purpose.
+ * ─────────────────────────────────────────────────────────────────────────
+ */
+@theme {
+  /* ── Page ────────────────────────────────────────────────────────────── */
+  --color-background:         rgb(21 19 18);           /* page background            */
+  --color-foreground:         #ffffff;                 /* headings & primary text    */
+  --color-muted-foreground:   #998f8f;                 /* descriptions, body copy    */
+  --color-subtle-foreground:  rgb(136 136 136);        /* form labels                */
+  --color-faded-foreground:   rgb(182 180 189 / 0.2);  /* faded 2nd word in headings */
+  --color-hover:              rgb(255 255 255 / 0.03); /* hover bg on list rows      */
+
+  /* ── Primary accent (orange) ─────────────────────────────────────────── */
+  --color-primary:            #f46c38;                 /* buttons, icons, photo card */
+  --color-primary-hover:      rgb(222 98 49);          /* button hover               */
+  --color-primary-foreground: #ffffff;                 /* text / icons on primary    */
+  --color-primary-decoration: rgb(202 89 46 / 0.4);    /* wavy lines on primary card */
+
+  /* ── Secondary accent (lime) ─────────────────────────────────────────── */
+  --color-secondary:            #c5ff41;               /* blogs card                 */
+  --color-secondary-foreground: #000000;               /* text / icons on secondary  */
+  --color-secondary-decoration: rgb(108 227 182 / 0.5);/* wavy lines on lime card    */
+
+  /* ── Light card (ID card, toolbox icon tiles) ────────────────────────── */
+  --color-card:                  #ffffff;
+  --color-card-foreground:       #000000;              /* name on the ID card        */
+  --color-card-muted-foreground: rgb(106 107 110);     /* tagline on the ID card     */
+  --color-card-hover:            rgb(0 0 0 / 0.1);     /* hover on social icon links */
+
+  /* ── Form ────────────────────────────────────────────────────────────── */
+  --color-input:              rgb(182 180 189 / 0.2);  /* input / textarea bg        */
+}
